@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+section span {
+    opacity: 0;
+    animation-name: fadeInOpacity;
+    animation: fadeInOpacity 4s linear 0.5s 1 normal forwards;
+}
+
+.one{
+    animation-delay: 0ms;
+}
+.two{
+    animation-delay: 2000ms;
+}
+.three{
+    animation-delay: 4000ms;
+}
+.four{
+    animation-delay: 6000ms;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
